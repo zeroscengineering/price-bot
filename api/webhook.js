@@ -83,8 +83,18 @@ function makeBubble(p) {
   }
 
   bodyContents.push({ type: 'separator', margin: 'md' });
+  if (p.list_price) {
+    bodyContents.push({
+      type: 'box', layout: 'horizontal', margin: 'sm',
+      contents: [
+        { type: 'text', text: 'ราคาตั้ง', size: 'xs', color: '#aaaaaa', flex: 6 },
+        { type: 'text', text: 'B' + fmtNum(p.list_price), size: 'xs', color: '#aaaaaa',
+          decoration: 'line-through', flex: 4, align: 'end' }
+      ]
+    });
+  }
   bodyContents.push({
-    type: 'box', layout: 'horizontal', margin: 'md',
+    type: 'box', layout: 'horizontal', margin: 'sm',
     contents: [
       { type: 'text', text: 'ราคา (ยังไม่รวม VAT)', size: 'xs', color: '#888888', flex: 6 },
       { type: 'text', text: 'B' + price, size: 'sm', color: '#222222', weight: 'bold', flex: 4, align: 'end' }
