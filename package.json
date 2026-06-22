@@ -1,0 +1,6 @@
+{
+  "name": "price-bot",
+  "version": "1.0.0",
+  "description": "LINE Bot สำหรับค้นหาราคาสินค้า",
+  "engines": { "node": "18.x" }
+}
