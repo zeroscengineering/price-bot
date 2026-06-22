@@ -50,67 +50,74 @@ function searchCompareAll(rows, keyword) {
   return results;
 }
 
-// สร้าง Flex Bubble แบบ Liquid Glass
+// สร้าง Flex Bubble — สดใส ชัดเจน
 function buildCompareBubble(r) {
+  // แถวข้อมูล: แถบสีซ้าย + label + value
+  function infoRow(accentColor, label, value, valueSize) {
+    return {
+      type: 'box', layout: 'horizontal', margin: 'md', spacing: 'none',
+      contents: [
+        // แถบสีซ้าย
+        { type: 'box', layout: 'vertical', width: '4px', cornerRadius: 'md',
+          backgroundColor: accentColor, contents: [] },
+        // เนื้อหา
+        { type: 'box', layout: 'vertical', paddingStart: '12px', flex: 1,
+          contents: [
+            { type: 'text', text: label, size: 'xxs', color: '#6B7280', weight: 'bold',
+              letterSpacing: '1px' },
+            { type: 'text', text: value || '-', size: valueSize || 'md',
+              color: '#111827', weight: 'bold', wrap: true, margin: 'xs' }
+          ]
+        }
+      ]
+    };
+  }
+
   var bodyContents = [
-    { type: 'text', text: 'ผลการเทียบรุ่น', weight: 'bold', size: 'lg',
-      color: '#006064', align: 'center', margin: 'sm' },
-    // รุ่นที่ค้นหา
-    { type: 'box', layout: 'vertical', margin: 'lg',
-      backgroundColor: '#FFFFFF', cornerRadius: 'lg', paddingAll: '15px',
-      borderColor: '#E2E8F0', borderWidth: 'light',
-      contents: [
-        { type: 'text', text: 'รุ่นที่ค้นหา', size: 'xs', color: '#0F4C81', weight: 'bold' },
-        { type: 'text', text: r.matchedKeyword, size: 'sm', color: '#2D3748', wrap: true, margin: 'xs' }
-      ]
-    },
-    // รุ่นเทียบ
-    { type: 'box', layout: 'vertical', margin: 'md',
-      backgroundColor: '#FFFFFF', cornerRadius: 'lg', paddingAll: '15px',
-      borderColor: '#E2E8F0', borderWidth: 'light',
-      contents: [
-        { type: 'text', text: 'รุ่นเทียบ', size: 'xs', color: '#718096' },
-        { type: 'text', text: r.model, size: 'md', color: '#3182CE',
-          wrap: true, weight: 'bold', margin: 'xs' }
-      ]
-    },
-    // ขนาดแคปทิ้วป์
-    { type: 'box', layout: 'vertical', margin: 'md',
-      backgroundColor: '#FFFFFF', cornerRadius: 'lg', paddingAll: '15px',
-      borderColor: '#E2E8F0', borderWidth: 'light',
-      contents: [
-        { type: 'text', text: 'ขนาดแคปทิ้วป์-บีทียู', size: 'xs', color: '#718096' },
-        { type: 'text', text: r.capTube, size: 'sm', color: '#2D3748',
-          wrap: true, weight: 'bold', margin: 'xs' }
-      ]
-    }
+    // ── รุ่นที่ค้นหา ──
+    infoRow('#F59E0B', '🔍  รุ่นที่ค้นหา', r.matchedKeyword, 'sm'),
+    { type: 'separator', margin: 'lg', color: '#E5E7EB' },
+    // ── รุ่นเทียบ ──
+    infoRow('#10B981', '🔄  รุ่นเทียบ (บาลานซ์)', r.model, 'lg'),
+    { type: 'separator', margin: 'lg', color: '#E5E7EB' },
+    // ── แคปทิ้วป์ ──
+    infoRow('#3B82F6', '📐  แคปทิ้วป์ - บีทียู', r.capTube, 'sm')
   ];
 
-  // ปุ่ม Spec (ถ้ามี link)
+  // ปุ่ม Spec
   if (r.specLink) {
+    bodyContents.push({ type: 'separator', margin: 'xl', color: '#E5E7EB' });
     bodyContents.push({
-      type: 'box', layout: 'vertical', margin: 'xl',
-      contents: [{
-        type: 'box', layout: 'horizontal', spacing: 'md',
-        paddingAll: '14px', cornerRadius: 'xxl',
-        background: { type: 'linearGradient', angle: '135deg',
-                      startColor: '#FFFFFFE6', endColor: '#7DD3FC80' },
-        borderColor: '#FFFFFF', borderWidth: 'bold',
-        justifyContent: 'center', alignItems: 'center',
-        action: { type: 'uri', label: 'ดูข้อมูล Spec', uri: r.specLink },
-        contents: [
-          { type: 'text', text: '📖', flex: 0, size: 'md' },
-          { type: 'text', text: 'ดูข้อมูล Spec', color: '#0284C7',
-            weight: 'bold', size: 'sm', flex: 0 }
-        ]
-      }]
+      type: 'box', layout: 'horizontal', margin: 'xl',
+      backgroundColor: '#0F4C81', cornerRadius: 'xl',
+      paddingAll: '14px', justifyContent: 'center', spacing: 'sm',
+      action: { type: 'uri', label: 'ดูข้อมูล Spec', uri: r.specLink },
+      contents: [
+        { type: 'text', text: '📖', flex: 0, size: 'sm' },
+        { type: 'text', text: 'ดูข้อมูล Spec', color: '#FFFFFF',
+          weight: 'bold', size: 'sm', flex: 0 }
+      ]
     });
   }
 
   return {
     type: 'bubble', size: 'mega',
-    styles: { body: { backgroundColor: '#F0F8FF' } },
-    body: { type: 'box', layout: 'vertical', paddingAll: '20px', contents: bodyContents }
+    header: {
+      type: 'box', layout: 'vertical', paddingAll: '16px',
+      backgroundColor: '#0F4C81',
+      contents: [
+        { type: 'text', text: '⚡ ผลการเทียบรุ่น', size: 'xs',
+          color: '#93C5FD', weight: 'bold', letterSpacing: '1px' },
+        { type: 'text', text: 'บาลานซ์ คูลลิ่ง วอเตอร์', size: 'xxs',
+          color: '#BFDBFE', margin: 'xs' }
+      ]
+    },
+    body: {
+      type: 'box', layout: 'vertical',
+      paddingAll: '20px', spacing: 'none',
+      backgroundColor: '#FFFFFF',
+      contents: bodyContents
+    }
   };
 }
 
