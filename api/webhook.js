@@ -55,16 +55,16 @@ function buildCompareBubble(r) {
   // แถวข้อมูล: แถบสีซ้าย + label + value
   function infoRow(accentColor, label, value, valueSize) {
     return {
-      type: 'box', layout: 'horizontal', margin: 'md', spacing: 'none',
+      type: 'box', layout: 'horizontal', margin: 'md',
       contents: [
-        // แถบสีซ้าย
+        // แถบสีซ้าย (ใช้ spacer แทน empty contents)
         { type: 'box', layout: 'vertical', width: '4px', cornerRadius: 'md',
-          backgroundColor: accentColor, contents: [] },
+          backgroundColor: accentColor,
+          contents: [{ type: 'filler' }] },
         // เนื้อหา
         { type: 'box', layout: 'vertical', paddingStart: '12px', flex: 1,
           contents: [
-            { type: 'text', text: label, size: 'xxs', color: '#6B7280', weight: 'bold',
-              letterSpacing: '1px' },
+            { type: 'text', text: label, size: 'xxs', color: '#6B7280', weight: 'bold' },
             { type: 'text', text: value || '-', size: valueSize || 'md',
               color: '#111827', weight: 'bold', wrap: true, margin: 'xs' }
           ]
@@ -74,19 +74,16 @@ function buildCompareBubble(r) {
   }
 
   var bodyContents = [
-    // ── รุ่นที่ค้นหา ──
     infoRow('#F59E0B', '🔍  รุ่นที่ค้นหา', r.matchedKeyword, 'sm'),
-    { type: 'separator', margin: 'lg', color: '#E5E7EB' },
-    // ── รุ่นเทียบ ──
+    { type: 'separator', margin: 'lg' },
     infoRow('#10B981', '🔄  รุ่นเทียบ (บาลานซ์)', r.model, 'lg'),
-    { type: 'separator', margin: 'lg', color: '#E5E7EB' },
-    // ── แคปทิ้วป์ ──
+    { type: 'separator', margin: 'lg' },
     infoRow('#3B82F6', '📐  แคปทิ้วป์ - บีทียู', r.capTube, 'sm')
   ];
 
   // ปุ่ม Spec
   if (r.specLink) {
-    bodyContents.push({ type: 'separator', margin: 'xl', color: '#E5E7EB' });
+    bodyContents.push({ type: 'separator', margin: 'xl' });
     bodyContents.push({
       type: 'box', layout: 'horizontal', margin: 'xl',
       backgroundColor: '#0F4C81', cornerRadius: 'xl',
@@ -106,15 +103,12 @@ function buildCompareBubble(r) {
       type: 'box', layout: 'vertical', paddingAll: '16px',
       backgroundColor: '#0F4C81',
       contents: [
-        { type: 'text', text: '⚡ ผลการเทียบรุ่น', size: 'xs',
-          color: '#93C5FD', weight: 'bold', letterSpacing: '1px' },
-        { type: 'text', text: 'บาลานซ์ คูลลิ่ง วอเตอร์', size: 'xxs',
-          color: '#BFDBFE', margin: 'xs' }
+        { type: 'text', text: '⚡ ผลการเทียบรุ่น', size: 'xs', color: '#93C5FD', weight: 'bold' },
+        { type: 'text', text: 'บาลานซ์ คูลลิ่ง วอเตอร์', size: 'xxs', color: '#BFDBFE', margin: 'xs' }
       ]
     },
     body: {
-      type: 'box', layout: 'vertical',
-      paddingAll: '20px', spacing: 'none',
+      type: 'box', layout: 'vertical', paddingAll: '20px',
       backgroundColor: '#FFFFFF',
       contents: bodyContents
     }
