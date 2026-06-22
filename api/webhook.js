@@ -3,6 +3,133 @@ const https  = require('https');
 const fs     = require('fs');
 const path   = require('path');
 
+/* ─────────────────────────────────────────
+   COMPARE CONFIG (Google Sheets)
+   ───────────────────────────────────────── */
+const SHEET_ID   = process.env.SHEET_ID   || '11iKq4ktHv_c6udgr1WYkSsIiB8qUBD-0wCbwmKKOB4A';
+const SHEET_NAME = process.env.SHEET_NAME || 'compare';
+
+// ดึงข้อมูลจาก Google Sheets REST API (sheet ต้องเปิด public)
+function fetchSheetRows() {
+  return new Promise(function(resolve, reject) {
+    var apiKey = process.env.GOOGLE_API_KEY;
+    if (!apiKey) return reject(new Error('GOOGLE_API_KEY not set'));
+    var range  = encodeURIComponent(SHEET_NAME + '!A1:X');
+    var url    = 'https://sheets.googleapis.com/v4/spreadsheets/' + SHEET_ID +
+                 '/values/' + range + '?key=' + apiKey;
+    https.get(url, function(res) {
+      var data = '';
+      res.on('data', function(c) { data += c; });
+      res.on('end', function() {
+        try { resolve(JSON.parse(data).values || []); }
+        catch(e) { reject(e); }
+      });
+    }).on('error', reject);
+  });
+}
+
+// ค้นหาในคอลัมน์ I–W (index 8–22) ทุกแถว
+function searchCompareAll(rows, keyword) {
+  var q = keyword.toLowerCase();
+  var results = [];
+  for (var r = 1; r < rows.length; r++) {
+    var row = rows[r];
+    for (var c = 8; c <= 22; c++) {
+      var cell = (row[c] || '').toString();
+      if (cell.toLowerCase().indexOf(q) >= 0) {
+        results.push({
+          model:          row[0] || '-',
+          capTube:        row[1] || '-',
+          matchedKeyword: cell,
+          specLink:       row[23] || ''
+        });
+        break; // ป้องกันซ้ำต่อแถว
+      }
+    }
+  }
+  return results;
+}
+
+// สร้าง Flex Bubble แบบ Liquid Glass
+function buildCompareBubble(r) {
+  var bodyContents = [
+    { type: 'text', text: 'ผลการเทียบรุ่น', weight: 'bold', size: 'lg',
+      color: '#006064', align: 'center', margin: 'sm' },
+    // รุ่นที่ค้นหา
+    { type: 'box', layout: 'vertical', margin: 'lg',
+      backgroundColor: '#FFFFFF', cornerRadius: 'lg', paddingAll: '15px',
+      borderColor: '#E2E8F0', borderWidth: 'light',
+      contents: [
+        { type: 'text', text: 'รุ่นที่ค้นหา', size: 'xs', color: '#0F4C81', weight: 'bold' },
+        { type: 'text', text: r.matchedKeyword, size: 'sm', color: '#2D3748', wrap: true, margin: 'xs' }
+      ]
+    },
+    // รุ่นเทียบ
+    { type: 'box', layout: 'vertical', margin: 'md',
+      backgroundColor: '#FFFFFF', cornerRadius: 'lg', paddingAll: '15px',
+      borderColor: '#E2E8F0', borderWidth: 'light',
+      contents: [
+        { type: 'text', text: 'รุ่นเทียบ', size: 'xs', color: '#718096' },
+        { type: 'text', text: r.model, size: 'md', color: '#3182CE',
+          wrap: true, weight: 'bold', margin: 'xs' }
+      ]
+    },
+    // ขนาดแคปทิ้วป์
+    { type: 'box', layout: 'vertical', margin: 'md',
+      backgroundColor: '#FFFFFF', cornerRadius: 'lg', paddingAll: '15px',
+      borderColor: '#E2E8F0', borderWidth: 'light',
+      contents: [
+        { type: 'text', text: 'ขนาดแคปทิ้วป์-บีทียู', size: 'xs', color: '#718096' },
+        { type: 'text', text: r.capTube, size: 'sm', color: '#2D3748',
+          wrap: true, weight: 'bold', margin: 'xs' }
+      ]
+    }
+  ];
+
+  // ปุ่ม Spec (ถ้ามี link)
+  if (r.specLink) {
+    bodyContents.push({
+      type: 'box', layout: 'vertical', margin: 'xl',
+      contents: [{
+        type: 'box', layout: 'horizontal', spacing: 'md',
+        paddingAll: '14px', cornerRadius: 'xxl',
+        background: { type: 'linearGradient', angle: '135deg',
+                      startColor: '#FFFFFFE6', endColor: '#7DD3FC80' },
+        borderColor: '#FFFFFF', borderWidth: 'bold',
+        justifyContent: 'center', alignItems: 'center',
+        action: { type: 'uri', label: 'ดูข้อมูล Spec', uri: r.specLink },
+        contents: [
+          { type: 'text', text: '📖', flex: 0, size: 'md' },
+          { type: 'text', text: 'ดูข้อมูล Spec', color: '#0284C7',
+            weight: 'bold', size: 'sm', flex: 0 }
+        ]
+      }]
+    });
+  }
+
+  return {
+    type: 'bubble', size: 'mega',
+    styles: { body: { backgroundColor: '#F0F8FF' } },
+    body: { type: 'box', layout: 'vertical', paddingAll: '20px', contents: bodyContents }
+  };
+}
+
+// สร้าง array ของ Flex messages (max 5, ละ 12 การ์ด)
+function buildCompareMessages(results) {
+  var limited = results.slice(0, 60);
+  var messages = [];
+  for (var i = 0; i < limited.length; i += 12) {
+    var chunk   = limited.slice(i, i + 12);
+    var bubbles = chunk.map(buildCompareBubble);
+    messages.push({
+      type: 'flex',
+      altText: 'ผลการค้นหารุ่นเทียบ (' + results.length + ' รายการ)',
+      contents: bubbles.length === 1 ? bubbles[0] : { type: 'carousel', contents: bubbles }
+    });
+  }
+  return messages;
+}
+
 // โหลด products.json
 let _products = null;
 function getProducts() {
@@ -228,17 +355,39 @@ async function handler(req, res) {
     var event = payload.events[i];
     if (event.type !== 'message' || !event.message || event.message.type !== 'text') continue;
 
-    var text    = event.message.text.trim();
-    var results = search(text);
+    var text = event.message.text.trim();
 
+    // ── ฟีเจอร์ เทียบ- ──────────────────────────────
+    if (text.toLowerCase().startsWith('เทียบ-')) {
+      var keyword = text.replace(/^เทียบ-/i, '').trim();
+      if (!keyword) continue;
+      try {
+        var rows       = await fetchSheetRows();
+        var cmpResults = searchCompareAll(rows, keyword);
+        if (cmpResults.length === 0) {
+          await replyLine(event.replyToken, [{ type: 'text', text: 'ไม่พบรุ่นเทียบสำหรับ "' + keyword + '"' }]);
+        } else {
+          await replyLine(event.replyToken, buildCompareMessages(cmpResults));
+        }
+      } catch(err) {
+        console.error('Compare error:', err);
+        await replyLine(event.replyToken, [{ type: 'text', text: 'เกิดข้อผิดพลาดในการค้นหา กรุณาลองใหม่' }]);
+      }
+      continue;
+    }
+
+    // ── ฟีเจอร์ ราคาสินค้า ──────────────────────────
+    if (!text.toLowerCase().startsWith('ราคา-')) continue;
+    var query   = text.replace(/^ราคา-/i, '').trim();
+    if (!query) continue;
+    var results = search(query);
     try {
-      var flex = results.length === 0 ? notFoundFlex(text) : resultFlex(text, results);
+      var flex = results.length === 0 ? notFoundFlex(query) : resultFlex(query, results);
       await replyLine(event.replyToken, [flex]);
     } catch(err) {
       console.error('Flex error, fallback to text:', err);
-      // fallback เป็น plain text
       var fallback = results.length === 0
-        ? 'ไม่พบสินค้า "' + text + '"'
+        ? 'ไม่พบสินค้า "' + query + '"'
         : 'พบ ' + results.length + ' รายการ: ' + results.map(function(p){ return p.model; }).join(', ');
       await replyLine(event.replyToken, [{ type: 'text', text: fallback }]);
     }
