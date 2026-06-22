@@ -76,7 +76,7 @@ function buildCompareBubble(r) {
   var bodyContents = [
     infoRow('#F59E0B', '🔍  รุ่นที่ค้นหา', r.matchedKeyword, 'sm'),
     { type: 'separator', margin: 'lg' },
-    infoRow('#10B981', '🔄  รุ่นเทียบ (บาลานซ์)', r.model, 'lg'),
+    infoRow('#10B981', '🔄  รุ่นเทียบ (คอมฯ)', r.model, 'lg'),
     { type: 'separator', margin: 'lg' },
     infoRow('#3B82F6', '📐  แคปทิ้วป์ - บีทียู', r.capTube, 'sm')
   ];
@@ -104,7 +104,7 @@ function buildCompareBubble(r) {
       backgroundColor: '#0F4C81',
       contents: [
         { type: 'text', text: '⚡ ผลการเทียบรุ่น', size: 'xs', color: '#93C5FD', weight: 'bold' },
-        { type: 'text', text: 'บาลานซ์ คูลลิ่ง วอเตอร์', size: 'xxs', color: '#BFDBFE', margin: 'xs' }
+        { type: 'text', text: 'คอมเพรสเซอร์ GMCC , LG , COPELAND', size: 'xxs', color: '#BFDBFE', margin: 'xs' }
       ]
     },
     body: {
