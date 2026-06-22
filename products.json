@@ -485,7 +485,8 @@
     "name": "Copeland ZR24K3-PFJ-911 20,200BTU 220/240/1/50V R22",
     "price": 12546.0,
     "price_vat": 13424.22,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 15300.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -497,7 +498,8 @@
     "name": "Copeland ZR24K3-TFD-922 20,200BTU 380/420/3/50V R22",
     "price": 13776.0,
     "price_vat": 14740.32,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 16800.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -509,7 +511,8 @@
     "name": "Copeland ZR26K3-PFJ-911 21,700BTU 220/240/1/50V R22",
     "price": 13284.0,
     "price_vat": 14213.88,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 16200.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -521,7 +524,8 @@
     "name": "Copeland ZR26K3-TFD-922 21,700BTU 380/420/3/50V R22",
     "price": 13530.0,
     "price_vat": 14477.1,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 16500.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -533,7 +537,8 @@
     "name": "Copeland ZR28KM-PFZ-583 23,000BTU 220/240/1/50V R22",
     "price": 8528.0,
     "price_vat": 9124.96,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 10400.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -545,7 +550,8 @@
     "name": "Copeland ZR28K3-PFJ-911 23,600BTU 220/240/1/51V R22",
     "price": 12546.0,
     "price_vat": 13424.22,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 15300.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -557,7 +563,8 @@
     "name": "Copeland ZR28K3-TFD-922 23,600BTU 380/420/3/51V R22",
     "price": 13612.0,
     "price_vat": 14564.84,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 16600.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -569,7 +576,8 @@
     "name": "Copeland ZR30KM-PFZ-583 25,000BTU 220/240/1/50V R22",
     "price": 8938.0,
     "price_vat": 9563.66,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 10900.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -581,7 +589,8 @@
     "name": "Copeland ZR30KS-PFZ-511 25,000BTU 220/240/1/50V R22",
     "price": 9471.0,
     "price_vat": 10133.97,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 11550.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -593,7 +602,8 @@
     "name": "Copeland ZR32K3-PFJ-522 26,500BTU 220/240/1/50V R22",
     "price": 12218.0,
     "price_vat": 13073.26,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 14900.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -605,7 +615,8 @@
     "name": "Copeland ZR32K3-TFD-522 26,500BTU 380/420/3/50V R22",
     "price": 12792.0,
     "price_vat": 13687.44,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 15600.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -617,7 +628,8 @@
     "name": "Copeland ZR34K3-PFJ-511 28,100BTU 220/240/1/50V R22",
     "price": 10824.0,
     "price_vat": 11581.68,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 13200.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -629,7 +641,8 @@
     "name": "Copeland ZR34K3-TFD-522 28,100BTU 380/420/3/50V R22",
     "price": 12464.0,
     "price_vat": 13336.48,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 15200.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -641,7 +654,8 @@
     "name": "Copeland ZR36K3-PFJ-511 30,200BTU 220/240/1/50V R22",
     "price": 10455.0,
     "price_vat": 11186.85,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 12750.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -653,7 +667,8 @@
     "name": "Copeland ZR36K3-TFD-522 30,200BTU 380/420/3/50V R22",
     "price": 12587.0,
     "price_vat": 13468.09,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 15350.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -665,7 +680,8 @@
     "name": "Copeland ZR40K3-PFJ-511 33,300BTU 220/240/1/50V R22",
     "price": 9922.0,
     "price_vat": 10616.54,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 12100.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -677,7 +693,8 @@
     "name": "Copeland ZR40K3-TFD-522 33,300BTU 380/420/3/50V R22",
     "price": 11562.0,
     "price_vat": 12371.34,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 14100.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -689,7 +706,8 @@
     "name": "Copeland ZR42KJ-PFJ-511 35,000BTU 220/240/1/50V R22",
     "price": 10086.0,
     "price_vat": 10792.02,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 12300.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -701,7 +719,8 @@
     "name": "Copeland ZR42KE-TFD-52E 35,000BTU 380/420/3/50V R22",
     "price": 11398.0,
     "price_vat": 12195.86,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 13900.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -713,7 +732,8 @@
     "name": "Copeland ZR45K3-PFJ-511 38,200BTU 220/240/1/50V R22",
     "price": 10701.0,
     "price_vat": 11450.07,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 13050.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -725,7 +745,8 @@
     "name": "Copeland ZR45KC-TFD-522 37,900BTU 380/420/3/50V R22",
     "price": 11890.0,
     "price_vat": 12722.3,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 14500.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -737,7 +758,8 @@
     "name": "Copeland ZR47KJ-PFJ-511 39,400BTU 220/240/1/50V R22",
     "price": 14104.0,
     "price_vat": 15091.28,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 17200.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -749,7 +771,8 @@
     "name": "Copeland ZR47KC-TFD-522 39,400BTU 380/420/3/50V R22",
     "price": 13202.0,
     "price_vat": 14126.14,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 16100.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -761,7 +784,8 @@
     "name": "Copeland ZR48K3-PFJ-511 40,500BTU 220/240/1/50V R22",
     "price": 12833.0,
     "price_vat": 13731.31,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 15650.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -773,7 +797,8 @@
     "name": "Copeland ZR48KE-TFD-52E 40,500BTU 380/420/3/50V R22",
     "price": 13366.0,
     "price_vat": 14301.62,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 16300.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -785,7 +810,8 @@
     "name": "Copeland ZR54KE-TFP-54E 45,000BTU 380/420/3/50V R22",
     "price": 12546.0,
     "price_vat": 13424.22,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 15300.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -797,7 +823,8 @@
     "name": "Copeland ZR57KE-TFP-54E 45,000BTU 380/420/3/50V R22",
     "price": 12874.0,
     "price_vat": 13775.18,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 15700.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -809,7 +836,8 @@
     "name": "Copeland ZR61KE-TFP-54E 51,000BTU 380/420/3/50V R22",
     "price": 11850.0,
     "price_vat": 12679.5,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 15800.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -821,7 +849,8 @@
     "name": "Copeland ZR68KC-TFD-522 57,500BTU 380/420/3/50V R22",
     "price": 14588.0,
     "price_vat": 15608.63,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 19450.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -833,7 +862,8 @@
     "name": "Copeland ZR72KC-TFD-52E 60,500BTU 380/420/3/50V R22",
     "price": 12375.0,
     "price_vat": 13241.25,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 16500.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -845,7 +875,8 @@
     "name": "Copeland ZR81KC-TFD-522 68,000BTU 380/420/3/50V R22",
     "price": 18375.0,
     "price_vat": 19661.25,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 24500.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -857,7 +888,8 @@
     "name": "Copeland ZR94KC-TFD-522 79,500BTU 380/420/3/50V R22",
     "price": 22050.0,
     "price_vat": 23593.5,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 29400.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -869,7 +901,8 @@
     "name": "Copeland ZR108KF-TFD-522 90,000BTU 380/420/3/50V R22",
     "price": 22538.0,
     "price_vat": 24115.13,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 30050.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -881,7 +914,8 @@
     "name": "Copeland ZR125KF-TFD-522 106,000BTU 380/420/3/50V R22",
     "price": 23175.0,
     "price_vat": 24797.25,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 30900.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -893,7 +927,8 @@
     "name": "Copeland ZR144KF-TFD-522 120,500BTU 380/420/3/50V R22",
     "price": 23550.0,
     "price_vat": 25198.5,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 31400.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -905,7 +940,8 @@
     "name": "Copeland ZR160KC-TFD-522 130,000BTU 380/420/3/50V R22",
     "price": 31763.0,
     "price_vat": 33985.88,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 42350.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -917,7 +953,8 @@
     "name": "Copeland ZR190KC-TFD-522 155,000BTU 380/420/3/50V R22",
     "price": 33525.0,
     "price_vat": 35871.75,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 44700.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -929,7 +966,8 @@
     "name": "Copeland ZR250KC-TWD-522 204,000BTU 380/420/3/50V R22",
     "price": 64200.0,
     "price_vat": 68694.0,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 85600.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -941,7 +979,8 @@
     "name": "Copeland ZR250KC-TWD-523 204,000BTU 380/420/3/50V R22",
     "price": 65925.0,
     "price_vat": 70539.75,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 87900.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -953,7 +992,8 @@
     "name": "Copeland ZR250KC-TWC-522 204,000BTU 200/208/3/50/60V R22",
     "price": 74025.0,
     "price_vat": 79206.75,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 98700.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -965,7 +1005,8 @@
     "name": "Copeland ZR310KC-TWD-522 253,000BTU 380/420/3/50V R22",
     "price": 70538.0,
     "price_vat": 75475.13,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 94050.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -977,7 +1018,8 @@
     "name": "Copeland ZR310KC-TWD-523 253,000BTU 380/420/3/50V R22",
     "price": 72713.0,
     "price_vat": 77802.38,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 96950.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -989,7 +1031,8 @@
     "name": "Copeland ZR310KC-TWC-522 253,000BTU 200/208/3/50/60V R22",
     "price": 77400.0,
     "price_vat": 82818.0,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 103200.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -1001,7 +1044,8 @@
     "name": "Copeland ZR310KC-TWC-523 253,000BTU 200/208/3/50/60V R22",
     "price": 78225.0,
     "price_vat": 83700.75,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 104300.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -1013,7 +1057,8 @@
     "name": "Copeland ZR380KC-TWD-522 315,000BTU 380/420/3/50V R22",
     "price": 77400.0,
     "price_vat": 82818.0,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 103200.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -1025,7 +1070,8 @@
     "name": "Copeland ZR380KC-TWD-523 315,000BTU 380/420/3/50V R22",
     "price": 79950.0,
     "price_vat": 85546.5,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 106600.0
   },
   {
     "category": "Emerson Copeland R22",
@@ -1037,7 +1083,8 @@
     "name": "Copeland ZR380KC-TWC-522 315,000BTU 200/208/3/50/60V R22",
     "price": 92663.0,
     "price_vat": 99148.88,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 123550.0
   },
   {
     "category": "Emerson Copeland R32",
@@ -1049,7 +1096,8 @@
     "name": "Copeland ZE36KUE-PFZ-502 32,700BTU 220/240/1/50V R32",
     "price": 8288.0,
     "price_vat": 8867.63,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 11050.0
   },
   {
     "category": "Emerson Copeland R32",
@@ -1061,7 +1109,8 @@
     "name": "Copeland ZE36KME-TFM-52E 33,000BTU 380/420/3/50V R32",
     "price": 9150.0,
     "price_vat": 9790.5,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 12200.0
   },
   {
     "category": "Emerson Copeland R32",
@@ -1073,7 +1122,8 @@
     "name": "Copeland ZE39KUE-PFZ-502 35,900BTU 220/240/1/50V R32",
     "price": 7650.0,
     "price_vat": 8185.5,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 10200.0
   },
   {
     "category": "Emerson Copeland R32",
@@ -1085,7 +1135,8 @@
     "name": "Copeland ZE39KME-TFM-52E 36,100BTU 380/420/3/50V R32",
     "price": 8850.0,
     "price_vat": 9469.5,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 11800.0
   },
   {
     "category": "Emerson Copeland R32",
@@ -1097,7 +1148,8 @@
     "name": "Copeland ZE42KUE-PFZ-542 38,400BTU 220/240/1/50V R32",
     "price": 9150.0,
     "price_vat": 9790.5,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 12200.0
   },
   {
     "category": "Emerson Copeland R32",
@@ -1109,7 +1161,8 @@
     "name": "Copeland ZE42KME-TFM-52E 35,200BTU 380/420/3/50V R32",
     "price": 9300.0,
     "price_vat": 9951.0,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 12400.0
   },
   {
     "category": "Emerson Copeland R32",
@@ -1121,7 +1174,8 @@
     "name": "Copeland ZE49KME-TFM-52E 41,000BTU 380/420/3/50V R32",
     "price": 9300.0,
     "price_vat": 9951.0,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 12400.0
   },
   {
     "category": "Emerson Copeland R32",
@@ -1133,7 +1187,8 @@
     "name": "Copeland ZE55KME-TFM-52E 45,600BTU 380/420/3/50V R32",
     "price": 9863.0,
     "price_vat": 10552.88,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 13150.0
   },
   {
     "category": "Emerson Copeland R32",
@@ -1145,7 +1200,8 @@
     "name": "Copeland ZE65KCE-TFM-522 55,300BTU 380/420/3/50V R32",
     "price": 11363.0,
     "price_vat": 12157.88,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 15150.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1157,7 +1213,8 @@
     "name": "Copeland ZR24K3E-PFJ-511 19,400BTU 220/240/1/50V R407",
     "price": 9713.0,
     "price_vat": 10392.38,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 12950.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1169,7 +1226,8 @@
     "name": "Copeland ZR28K3E-PFJ-511 22,700BTU 220/240/1/50V R407",
     "price": 10163.0,
     "price_vat": 10873.88,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 13550.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1181,7 +1239,8 @@
     "name": "Copeland ZR30K3E-PFJ-511 24,300BTU 220/240/1/50V R407",
     "price": 10425.0,
     "price_vat": 11154.75,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 13900.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1193,7 +1252,8 @@
     "name": "Copeland ZR34K3E-PFJ-511 27,000BTU 220/240/1/50V R407",
     "price": 10350.0,
     "price_vat": 11074.5,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 13800.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1205,7 +1265,8 @@
     "name": "Copeland ZR36K3E-PFJ-511 28,800BTU 220/240/1/50V R407",
     "price": 10500.0,
     "price_vat": 11235.0,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 14000.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1217,7 +1278,8 @@
     "name": "Copeland ZR40K3E-PFJ-511 31,800BTU 220/240/1/50V R407",
     "price": 9863.0,
     "price_vat": 10552.88,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 13150.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1229,7 +1291,8 @@
     "name": "Copeland ZR42K3E-PFJ-511 33,200BTU 220/240/1/50V R407",
     "price": 10013.0,
     "price_vat": 10713.38,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 13350.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1241,7 +1304,8 @@
     "name": "Copeland ZR45K3E-PFJ-511 35,500BTU 220/240/1/50V R407",
     "price": 10050.0,
     "price_vat": 10753.5,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 13400.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1253,7 +1317,8 @@
     "name": "Copeland ZR47K3E-PFJ-511 37,400BTU 220/240/1/50V R407",
     "price": 12525.0,
     "price_vat": 13401.75,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 16700.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1265,7 +1330,8 @@
     "name": "Copeland ZR48K3E-PFJ-511 38,900BTU 220/240/1/50V R407",
     "price": 13800.0,
     "price_vat": 14766.0,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 18400.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1277,7 +1343,8 @@
     "name": "Copeland ZR24K3E-TFD-522 19,400BTU 380/420/3/50V R407",
     "price": 11775.0,
     "price_vat": 12599.25,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 15700.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1289,7 +1356,8 @@
     "name": "Copeland ZR28K3E-TFD-522 22,700BTU 380/420/3/50V R407",
     "price": 11738.0,
     "price_vat": 12559.13,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 15650.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1301,7 +1369,8 @@
     "name": "Copeland ZR32K3E-TFD-522 25,200BTU 380/420/3/50V R407",
     "price": 12000.0,
     "price_vat": 12840.0,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 16000.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1313,7 +1382,8 @@
     "name": "Copeland ZR34K3E-TFD-522 27,000BTU 380/420/3/50V R407",
     "price": 12375.0,
     "price_vat": 13241.25,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 16500.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1325,7 +1395,8 @@
     "name": "Copeland ZR36K3E-TFD-522 28,800BTU 380/420/3/50V R407",
     "price": 12525.0,
     "price_vat": 13401.75,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 16700.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1337,7 +1408,8 @@
     "name": "Copeland ZR40K3E-TFD-522 31,700BTU 380/420/3/50V R407",
     "price": 12075.0,
     "price_vat": 12920.25,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 16100.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1349,7 +1421,8 @@
     "name": "Copeland ZR42KEE-TFD-52E 33,300BTU 380/420/3/50V R407",
     "price": 11288.0,
     "price_vat": 12077.63,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 15050.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1361,7 +1434,8 @@
     "name": "Copeland ZR45KEE-TFD-522 35,800BTU 380/420/3/50V R407",
     "price": 12525.0,
     "price_vat": 13401.75,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 16700.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1373,7 +1447,8 @@
     "name": "Copeland ZR47KCE-TFD-522 37,400BTU 380/420/3/50V R407",
     "price": 13313.0,
     "price_vat": 14244.38,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 17750.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1385,7 +1460,8 @@
     "name": "Copeland ZR48KEE-TFD-52E 38,900BTU 380/420/3/50V R407",
     "price": 12225.0,
     "price_vat": 13080.75,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 16300.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1397,7 +1473,8 @@
     "name": "Copeland ZR54KEE-TFM-52E 44,200BTU 380/420/3/50V R407",
     "price": 12225.0,
     "price_vat": 13080.75,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 16300.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1409,7 +1486,8 @@
     "name": "Copeland ZR57KEE-TFM-52E 46,300BTU 380/420/3/50V R407",
     "price": 12713.0,
     "price_vat": 13602.38,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 16950.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1421,7 +1499,8 @@
     "name": "Copeland ZR61KEE-TFM-52E 50,000BTU 380/420/3/50V R407",
     "price": 13800.0,
     "price_vat": 14766.0,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 18400.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1433,7 +1512,8 @@
     "name": "Copeland ZR68KCE-TFD-522 56,100BTU 380/420/3/50V R407",
     "price": 15075.0,
     "price_vat": 16130.25,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 20100.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1445,7 +1525,8 @@
     "name": "Copeland ZR72KCE-TFD-52E 59,200BTU 380/420/3/50V R407",
     "price": 12713.0,
     "price_vat": 13602.38,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 16950.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1457,7 +1538,8 @@
     "name": "Copeland ZR81KCE-TFD-522 65,100BTU 380/420/3/50V R407",
     "price": 19313.0,
     "price_vat": 20664.38,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 25750.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1469,7 +1551,8 @@
     "name": "Copeland ZR94KCE-TFD-522 78,600BTU 380/420/3/50V R407",
     "price": 23888.0,
     "price_vat": 25559.63,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 31850.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1481,7 +1564,8 @@
     "name": "Copeland ZR108KFE-TFD-522 88,100BTU 380/420/3/50V R407",
     "price": 23175.0,
     "price_vat": 24797.25,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 30900.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1493,7 +1577,8 @@
     "name": "Copeland ZR125KFE-TFD-522 103,000BTU 380/420/3/50V R407",
     "price": 23813.0,
     "price_vat": 25479.38,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 31750.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1505,7 +1590,8 @@
     "name": "Copeland ZR144KFE-TFD-522 118,000BTU 380/420/3/50V R407",
     "price": 24338.0,
     "price_vat": 26041.13,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 32450.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1517,7 +1603,8 @@
     "name": "Copeland ZR160KCE-TFD-522 128,000BTU 380/420/3/50V R407",
     "price": 32850.0,
     "price_vat": 35149.5,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 43800.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1529,7 +1616,8 @@
     "name": "Copeland ZR190KCE-TFD-522 150,000BTU 380/420/3/50V R407",
     "price": 35850.0,
     "price_vat": 38359.5,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 47800.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1541,7 +1629,8 @@
     "name": "Copeland ZRT250KCE-TFD-250 197,000BTU 380/420/3/50V R407",
     "price": 67838.0,
     "price_vat": 72586.13,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 90450.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1553,7 +1642,8 @@
     "name": "Copeland ZRT288KFE-TFD-275 226,000BTU 380/420/3/50V R407",
     "price": 57413.0,
     "price_vat": 61431.38,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 76550.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1565,7 +1655,8 @@
     "name": "Copeland ZR250KCE-TWD-522 200,000BTU 380/420/3/50V R407",
     "price": 65775.0,
     "price_vat": 70379.25,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 87700.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1577,7 +1668,8 @@
     "name": "Copeland ZR250KCE-TWD-523 200,000BTU 380/420/3/50V R407",
     "price": 66750.0,
     "price_vat": 71422.5,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 89000.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1589,7 +1681,8 @@
     "name": "Copeland ZR250KCE-TWC-522 240,000BTU 380/420/3/50V R407",
     "price": 73425.0,
     "price_vat": 78564.75,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 97900.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1601,7 +1694,8 @@
     "name": "Copeland ZR310KCE-TWD-522 248,000BTU 380/420/3/50V R407",
     "price": 73125.0,
     "price_vat": 78243.75,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 97500.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1613,7 +1707,8 @@
     "name": "Copeland ZR310KCE-TWD-523 248,000BTU 380/420/3/50V R407",
     "price": 74438.0,
     "price_vat": 79648.13,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 99250.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1625,7 +1720,8 @@
     "name": "Copeland ZR310KCE-TWC-522 297,000BTU 380/420/3/50V R407",
     "price": 77400.0,
     "price_vat": 82818.0,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 103200.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1637,7 +1733,8 @@
     "name": "Copeland ZR310KCE-TWC-523 297,000BTU 380/420/3/50V R407",
     "price": 78225.0,
     "price_vat": 83700.75,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 104300.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1649,7 +1746,8 @@
     "name": "Copeland ZR380KCE-TWD-522 313,000BTU 380/420/3/50V R407",
     "price": 80363.0,
     "price_vat": 85987.88,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 107150.0
   },
   {
     "category": "Emerson Copeland R407",
@@ -1661,7 +1759,8 @@
     "name": "Copeland ZR380KCE-TWD-523 313,000BTU 380/420/3/50V R407",
     "price": 82500.0,
     "price_vat": 88275.0,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 110000.0
   },
   {
     "category": "Panasonic Compressor",
@@ -1673,7 +1772,8 @@
     "pcn": "PACOM000000016",
     "name": "Panasonic 5JD420DAA22 35,605BTU 220V R410A",
     "price": 6562.5,
-    "price_vat": 7021.88
+    "price_vat": 7021.88,
+    "list_price": 8750.0
   },
   {
     "category": "Panasonic Compressor",
@@ -1685,7 +1785,8 @@
     "pcn": "PACOM000000006",
     "name": "Panasonic 9JS330DAA22 32,105BTU 220V R32",
     "price": 5625.0,
-    "price_vat": 6018.75
+    "price_vat": 6018.75,
+    "list_price": 7500.0
   },
   {
     "category": "Panasonic Compressor",
@@ -1697,7 +1798,8 @@
     "pcn": "PACOM000000007",
     "name": "Panasonic 9JS330PAA21 31,135BTU 380V R32",
     "price": 6300.0,
-    "price_vat": 6741.0
+    "price_vat": 6741.0,
+    "list_price": 8400.0
   },
   {
     "category": "Panasonic Compressor",
@@ -1709,7 +1811,8 @@
     "pcn": "PACOM000000008",
     "name": "Panasonic 9JS360DAA22 35,315BTU 220V R32",
     "price": 5775.0,
-    "price_vat": 6179.25
+    "price_vat": 6179.25,
+    "list_price": 7700.0
   },
   {
     "category": "Panasonic Compressor",
@@ -1721,7 +1824,8 @@
     "pcn": "PACOM000000010",
     "name": "Panasonic 9JS360PAA21 34,375BTU 380V R32",
     "price": 6450.0,
-    "price_vat": 6901.5
+    "price_vat": 6901.5,
+    "list_price": 8600.0
   },
   {
     "category": "Panasonic Compressor",
@@ -1733,7 +1837,8 @@
     "pcn": "PACOM000000002",
     "name": "Panasonic 9JD390DAA22 37,875BTU 220V R32",
     "price": 6900.0,
-    "price_vat": 7383.0
+    "price_vat": 7383.0,
+    "list_price": 9200.0
   },
   {
     "category": "Panasonic Compressor",
@@ -1745,7 +1850,8 @@
     "pcn": "PACOM000000003",
     "name": "Panasonic 9JD390PAA22 36,835BTU 380V R32",
     "price": 7500.0,
-    "price_vat": 8025.0
+    "price_vat": 8025.0,
+    "list_price": 10000.0
   },
   {
     "category": "Panasonic Compressor",
@@ -1757,7 +1863,8 @@
     "pcn": "PACOM000000023",
     "name": "Panasonic 9PS132DAA21 12,265BTU 220V R32",
     "price": 3712.5,
-    "price_vat": 3972.38
+    "price_vat": 3972.38,
+    "list_price": 4950.0
   },
   {
     "category": "Panasonic Compressor",
@@ -1769,7 +1876,8 @@
     "pcn": "PACOM000000004",
     "name": "Panasonic 9JD420DAA22 41,950BTU 220V R32",
     "price": 7500.0,
-    "price_vat": 8025.0
+    "price_vat": 8025.0,
+    "list_price": 10000.0
   },
   {
     "category": "Panasonic Compressor",
@@ -1781,7 +1889,8 @@
     "pcn": "PACOM000000005",
     "name": "Panasonic 9JD420PAA22 40,840BTU 380V R32",
     "price": 7875.0,
-    "price_vat": 8426.25
+    "price_vat": 8426.25,
+    "list_price": 10500.0
   },
   {
     "category": "Panasonic Compressor",
@@ -1793,7 +1902,8 @@
     "pcn": "PACOM000000012",
     "name": "Panasonic 9VS270DAA21 25,726BTU 220V R32",
     "price": 4800.0,
-    "price_vat": 5136.0
+    "price_vat": 5136.0,
+    "list_price": 6400.0
   },
   {
     "category": "Panasonic Compressor",
@@ -1805,7 +1915,8 @@
     "pcn": "PACOM000000011",
     "name": "Panasonic 9VD330DAA21 31,868BTU 220V R32",
     "price": 5250.0,
-    "price_vat": 5617.5
+    "price_vat": 5617.5,
+    "list_price": 7000.0
   },
   {
     "category": "Emerson Copeland R410A",
@@ -1817,7 +1928,8 @@
     "name": "Copeland ZP25KME-PFZ-582 20,500BTU 220/240/1/50V R410A",
     "price": 7725.0,
     "price_vat": 8265.75,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 10300.0
   },
   {
     "category": "Emerson Copeland R410A",
@@ -1829,7 +1941,8 @@
     "name": "Copeland ZP27KME-PFZ-582 22,400BTU 220/240/1/50V R410A",
     "price": 7875.0,
     "price_vat": 8426.25,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 10500.0
   },
   {
     "category": "Emerson Copeland R410A",
@@ -1841,7 +1954,8 @@
     "name": "Copeland ZP31KSE-PFZ-522 25,100BTU 220/240/1/50V R410A",
     "price": 7875.0,
     "price_vat": 8426.25,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 10500.0
   },
   {
     "category": "Emerson Copeland R410A",
@@ -1853,7 +1967,8 @@
     "name": "Copeland ZP36KUE-PFZ-502 30,000BTU 220/240/1/50V R410A",
     "price": 8850.0,
     "price_vat": 9469.5,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 11800.0
   },
   {
     "category": "Emerson Copeland R410A",
@@ -1865,7 +1980,8 @@
     "name": "Copeland ZP39KSE-PFZ-593 31,400BTU 220/240/1/50V R410A",
     "price": 8925.0,
     "price_vat": 9549.75,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 11900.0
   },
   {
     "category": "Emerson Copeland R410A",
@@ -1877,7 +1993,8 @@
     "name": "Copeland ZP42KUE-PFZ-50E 38,500BTU 220/240/1/50V R410A",
     "price": 9075.0,
     "price_vat": 9710.25,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 12100.0
   },
   {
     "category": "Emerson Copeland R410A",
@@ -1889,7 +2006,8 @@
     "name": "Copeland ZP51KSE-PFZ-593 41,500BTU 220/240/1/50V R410A",
     "price": 12863.0,
     "price_vat": 13762.88,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 17150.0
   },
   {
     "category": "Emerson Copeland R410A",
@@ -1901,7 +2019,8 @@
     "name": "Copeland ZP34KUE-TFM-52E 27,700BTU 380/420/3/50V R410A",
     "price": 11175.0,
     "price_vat": 11957.25,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 14900.0
   },
   {
     "category": "Emerson Copeland R410A",
@@ -1913,7 +2032,8 @@
     "name": "Copeland ZP36KUE-TFM-52E 30,000BTU 380/420/3/50V R410A",
     "price": 9900.0,
     "price_vat": 10593.0,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 13200.0
   },
   {
     "category": "Emerson Copeland R410A",
@@ -1925,7 +2045,8 @@
     "name": "Copeland ZP39KSE-TFM-52E 31,600BTU 380/420/3/50V R410A",
     "price": 9600.0,
     "price_vat": 10272.0,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 12800.0
   },
   {
     "category": "Emerson Copeland R410A",
@@ -1937,7 +2058,8 @@
     "name": "Copeland ZP42KUE-TFM-50E 35,000BTU 380/420/3/50V R410A",
     "price": 9675.0,
     "price_vat": 10352.25,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 12900.0
   },
   {
     "category": "Emerson Copeland R410A",
@@ -1949,7 +2071,8 @@
     "name": "Copeland ZP44KUE-TFM-52E 37,000BTU 380/420/3/50V R410A",
     "price": 11513.0,
     "price_vat": 12318.38,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 15350.0
   },
   {
     "category": "Emerson Copeland R410A",
@@ -1961,7 +2084,8 @@
     "name": "Copeland ZP51KUE-TFM-52E 42,500BTU 380/420/3/50V R410A",
     "price": 11175.0,
     "price_vat": 11957.25,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 14900.0
   },
   {
     "category": "Emerson Copeland R410A",
@@ -1973,7 +2097,8 @@
     "name": "Copeland ZP54KUE-TFM-50E 45,000BTU 380/420/3/50V R410A",
     "price": 11325.0,
     "price_vat": 12117.75,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 15100.0
   },
   {
     "category": "Emerson Copeland R410A",
@@ -1985,7 +2110,8 @@
     "name": "Copeland ZP57KUE-TFM-50E 52,500BTU 380/420/3/50V R410A",
     "price": 10650.0,
     "price_vat": 11395.5,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 14200.0
   },
   {
     "category": "Emerson Copeland R410A",
@@ -1997,7 +2123,8 @@
     "name": "Copeland ZP61KCE-TFD-52E 50,000BTU 380/420/3/50V R410A",
     "price": 12713.0,
     "price_vat": 13602.38,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 16950.0
   },
   {
     "category": "Emerson Copeland R410A",
@@ -2009,7 +2136,8 @@
     "name": "Copeland ZP67KCE-TFD-52E 55,000BTU 380/420/3/50V R410A",
     "price": 13313.0,
     "price_vat": 14244.38,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 17750.0
   },
   {
     "category": "Emerson Copeland R410A",
@@ -2021,7 +2149,8 @@
     "name": "Copeland ZP72KCE-TFD-52E 58,500BTU 380/420/3/50V R410A",
     "price": 12150.0,
     "price_vat": 13000.5,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 16200.0
   },
   {
     "category": "Emerson Copeland R410A",
@@ -2033,7 +2162,8 @@
     "name": "Copeland ZP83KFE-TFD-522 68,000BTU 380/420/3/50V R410A",
     "price": 17888.0,
     "price_vat": 19139.63,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 23850.0
   },
   {
     "category": "Emerson Copeland R410A",
@@ -2045,7 +2175,8 @@
     "name": "Copeland ZP90KCE-TFD-522 74,500BTU 380/420/3/50V R410A",
     "price": 24750.0,
     "price_vat": 26482.5,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 33000.0
   },
   {
     "category": "Emerson Copeland R410A",
@@ -2057,7 +2188,8 @@
     "name": "Copeland ZP91KCE-TFD-522 74,000BTU 380/420/3/50V R410A",
     "price": 21525.0,
     "price_vat": 23031.75,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 28700.0
   },
   {
     "category": "Emerson Copeland R410A",
@@ -2069,7 +2201,8 @@
     "name": "Copeland ZP103KFE-TFD-522 85,700BTU 380/420/3/50V R410A",
     "price": 24038.0,
     "price_vat": 25720.13,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 32050.0
   },
   {
     "category": "Emerson Copeland R410A",
@@ -2081,7 +2214,8 @@
     "name": "Copeland ZP104KCE-TFD-522 87,500BTU 380/420/3/50V R410A",
     "price": 23925.0,
     "price_vat": 25599.75,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 31900.0
   },
   {
     "category": "Emerson Copeland R410A",
@@ -2093,7 +2227,8 @@
     "name": "Copeland ZP120KFE-TFD-522 100,000BTU 380/420/3/50V R410A",
     "price": 24975.0,
     "price_vat": 26723.25,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 33300.0
   },
   {
     "category": "Emerson Copeland R410A",
@@ -2105,7 +2240,8 @@
     "name": "Copeland ZP122KCE-TFD-522 102,000BTU 380/420/3/50V R410A",
     "price": 27413.0,
     "price_vat": 29331.38,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 36550.0
   },
   {
     "category": "Emerson Copeland R410A",
@@ -2117,7 +2253,8 @@
     "name": "Copeland ZP137KCE-TFD-522 111,000BTU 380/420/3/50V R410A",
     "price": 27563.0,
     "price_vat": 29491.88,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 36750.0
   },
   {
     "category": "Emerson Copeland R410A",
@@ -2129,7 +2266,8 @@
     "name": "Copeland ZP144KFE-TFD-522 121,000BTU 380/420/3/50V R410A",
     "price": 26625.0,
     "price_vat": 28488.75,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 35500.0
   },
   {
     "category": "Emerson Copeland R410A",
@@ -2141,7 +2279,8 @@
     "name": "Copeland ZP154KCE-TFD-522 127,000BTU 380/420/3/50V R410A",
     "price": 33263.0,
     "price_vat": 35590.88,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 44350.0
   },
   {
     "category": "Emerson Copeland R410A",
@@ -2153,7 +2292,8 @@
     "name": "Copeland ZP182KCE-TFD-522 150,000BTU 380/420/3/50V R410A",
     "price": 35100.0,
     "price_vat": 37557.0,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 46800.0
   },
   {
     "category": "Emerson Copeland R410A",
@@ -2165,7 +2305,8 @@
     "name": "Copeland ZP232KCE-TED-550 193,500BTU 380/420/3/50V R410A",
     "price": 40875.0,
     "price_vat": 43736.25,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 54500.0
   },
   {
     "category": "Emerson Copeland R410A",
@@ -2177,7 +2318,8 @@
     "name": "Copeland ZP235KCE-TWD-522 195,000BTU 380/420/3/50V R410A",
     "price": 75075.0,
     "price_vat": 80330.25,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 100100.0
   },
   {
     "category": "Emerson Copeland R410A",
@@ -2189,7 +2331,8 @@
     "name": "Copeland ZP295KCE-TWD-522 244,000BTU 380/420/3/50V R410A",
     "price": 81750.0,
     "price_vat": 87472.5,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 109000.0
   },
   {
     "category": "Emerson Copeland R410A",
@@ -2201,7 +2344,8 @@
     "name": "Copeland ZP385KCE-TWD-522 316,000BTU 380/420/3/50V R410A",
     "price": 81375.0,
     "price_vat": 87071.25,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 108500.0
   },
   {
     "category": "Emerson Copeland R410A",
@@ -2213,7 +2357,8 @@
     "name": "Copeland ZP485KCE-TWD-522 404,000BTU 380/420/3/50V R410A",
     "price": 149250.0,
     "price_vat": 159697.5,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 199000.0
   },
   {
     "category": "Emerson Copeland R410A",
@@ -2225,7 +2370,8 @@
     "name": "Copeland Tandem ZPT240KCE-TFD-277 197,500BTU 380/420/3/50V R410A",
     "price": 61613.0,
     "price_vat": 65925.38,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 82150.0
   },
   {
     "category": "Emerson Copeland R410A",
@@ -2237,7 +2383,8 @@
     "name": "Copeland Tandem ZPT274KCE-TFD-277 219,000BTU 380/420/3/50V R410A",
     "price": 62325.0,
     "price_vat": 66687.75,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 83100.0
   },
   {
     "category": "Emerson Copeland R410A",
@@ -2249,7 +2396,8 @@
     "name": "Copeland Tandem ZPT288KFE-TFD-275 239,000BTU 380/420/3/50V R410A",
     "price": 57375.0,
     "price_vat": 61391.25,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 76500.0
   },
   {
     "category": "Emerson Copeland R410A",
@@ -2261,6 +2409,7 @@
     "name": "Copeland Tandem ZPT364KCE-TFD-275 296,000BTU 380/420/3/50V R410A",
     "price": 81525.0,
     "price_vat": 87231.75,
-    "pcn": ""
+    "pcn": "",
+    "list_price": 108700.0
   }
 ]
