@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ราคาสินค้า แสงชัย</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Sarabun', 'Segoe UI', sans-serif; background: #f0f4f8; color: #222; }
+  header {
+    background: linear-gradient(135deg, #1a56db, #0e3fa3);
+    color: #fff; padding: 18px 24px;
+    display: flex; align-items: center; gap: 14px;
+  }
+  header h1 { font-size: 1.3rem; font-weight: 700; }
+  header small { font-size: 0.8rem; opacity: 0.8; }
+  .search-bar {
+    background: #fff; padding: 16px 24px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    display: flex; gap: 10px; flex-wrap: wrap; align-items: center;
+    position: sticky; top: 0; z-index: 10;
+  }
+  .search-bar input {
+    flex: 1; min-width: 200px;
+    border: 2px solid #d1d5db; border-radius: 8px;
+    padding: 9px 14px; font-size: 0.95rem; outline: none;
+    transition: border-color 0.2s;
+  }
+  .search-bar input:focus { border-color: #1a56db; }
+  .search-bar select {
+    border: 2px solid #d1d5db; border-radius: 8px;
+    padding: 9px 12px; font-size: 0.9rem; outline: none; background: #fff;
+    cursor: pointer;
+  }
+  .stats { font-size: 0.85rem; color: #6b7280; white-space: nowrap; }
+  main { padding: 20px 24px; max-width: 1100px; margin: 0 auto; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    gap: 14px;
+  }
+  .card {
+    background: #fff; border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+    padding: 14px 16px;
+    border-left: 4px solid #1a56db;
+    transition: box-shadow 0.15s;
+  }
+  .card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.13); }
+  .card-cat {
+    font-size: 0.7rem; font-weight: 700; letter-spacing: 0.05em;
+    color: #6b7280; text-transform: uppercase; margin-bottom: 4px;
+  }
+  .card-name {
+    font-size: 0.88rem; color: #374151; line-height: 1.4; margin-bottom: 8px;
+  }
+  .card-model {
+    font-size: 0.95rem; font-weight: 700; color: #1a56db; margin-bottom: 8px;
+  }
+  .card-prices { display: flex; gap: 12px; align-items: baseline; }
+  .price-ex {
+    font-size: 1.05rem; font-weight: 700; color: #111;
+  }
+  .price-vat {
+    font-size: 0.82rem; color: #6b7280;
+  }
+  .badge-pcn {
+    display: inline-block; background: #eff6ff; color: #1e40af;
+    font-size: 0.72rem; border-radius: 4px; padding: 2px 7px;
+    margin-top: 6px;
+  }
+  .empty { text-align: center; color: #9ca3af; padding: 60px 0; font-size: 1rem; }
+  .tag-list { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+  .tag {
+    background: #e0e7ff; color: #3730a3; border-radius: 20px;
+    padding: 4px 14px; font-size: 0.8rem; cursor: pointer;
+    border: 2px solid transparent; transition: all 0.15s;
+  }
+  .tag:hover, .tag.active { background: #1a56db; color: #fff; }
+  @media (max-width: 600px) {
+    main { padding: 12px; }
+    .search-bar { padding: 12px; }
+    header { padding: 14px 16px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>🔧 ราคาสินค้า</h1>
+    <small>Alco · Honeywell · อุปกรณ์ทำความเย็น</small>
+  </div>
+</header>
+
+<div class="search-bar">
+  <input type="text" id="searchInput" placeholder="ค้นหารุ่น, ชื่อ, PCN..." oninput="filterProducts()">
+  <select id="catFilter" onchange="filterProducts()">
+    <option value="">หมวดทั้งหมด</option>
+  </select>
+  <span class="stats" id="stats"></span>
+</div>
+
+<main>
+  <div class="tag-list" id="tagList"></div>
+  <div class="grid" id="productGrid"></div>
+</main>
+
+<script>
+let allProducts = [];
+let activeTag = '';
+
+async function loadData() {
+  const resp = await fetch('products.json');
+  allProducts = await resp.json();
+  buildUI();
+  filterProducts();
+}
+
+function buildUI() {
+  // Categories for dropdown
+  const cats = [...new Set(allProducts.map(p => p.category).filter(Boolean))].sort();
+  const sel = document.getElementById('catFilter');
+  cats.forEach(c => {
+    const opt = document.createElement('option');
+    opt.value = c; opt.textContent = c;
+    sel.appendChild(opt);
+  });
+
+  // Top categories as tags
+  const counts = {};
+  allProducts.forEach(p => { if(p.category) counts[p.category] = (counts[p.category]||0)+1; });
+  const topCats = Object.entries(counts).sort((a,b)=>b[1]-a[1]).slice(0,10);
+  const tagList = document.getElementById('tagList');
+  topCats.forEach(([cat, n]) => {
+    const t = document.createElement('span');
+    t.className = 'tag';
+    t.textContent = `${cat} (${n})`;
+    t.onclick = () => {
+      if (activeTag === cat) { activeTag = ''; t.classList.remove('active'); }
+      else {
+        document.querySelectorAll('.tag').forEach(x => x.classList.remove('active'));
+        activeTag = cat; t.classList.add('active');
+        document.getElementById('catFilter').value = cat;
+      }
+      filterProducts();
+    };
+    tagList.appendChild(t);
+  });
+}
+
+function filterProducts() {
+  const q = document.getElementById('searchInput').value.trim().toLowerCase();
+  const cat = document.getElementById('catFilter').value;
+
+  const filtered = allProducts.filter(p => {
+    const matchCat = !cat || p.category === cat;
+    const matchQ = !q ||
+      p.name?.toLowerCase().includes(q) ||
+      p.model?.toLowerCase().includes(q) ||
+      p.pcn?.toLowerCase().includes(q) ||
+      p.category?.toLowerCase().includes(q);
+    return matchCat && matchQ;
+  });
+
+  renderGrid(filtered);
+  document.getElementById('stats').textContent = `แสดง ${filtered.length} / ${allProducts.length} รายการ`;
+}
+
+function renderGrid(items) {
+  const grid = document.getElementById('productGrid');
+  if (items.length === 0) {
+    grid.innerHTML = '<div class="empty" style="grid-column:1/-1">ไม่พบสินค้าที่ค้นหา</div>';
+    return;
+  }
+  grid.innerHTML = items.slice(0, 200).map(p => `
+    <div class="card">
+      <div class="card-cat">${p.category || ''}</div>
+      ${p.model ? `<div class="card-model">${p.model}</div>` : ''}
+      <div class="card-name">${p.name || ''}</div>
+      <div class="card-prices">
+        <span class="price-ex">฿${p.price?.toLocaleString('th-TH', {minimumFractionDigits:2})}</span>
+        <span class="price-vat">รวม VAT ฿${p.price_vat?.toLocaleString('th-TH', {minimumFractionDigits:2})}</span>
+      </div>
+      ${p.pcn ? `<span class="badge-pcn">PCN: ${p.pcn}</span>` : ''}
+    </div>
+  `).join('');
+}
+
+loadData();
+</script>
+</body>
+</html>
